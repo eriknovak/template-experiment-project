@@ -12,7 +12,7 @@ dependencies:
   - jupyterlab
   - ipywidgets>=7.5
   - nodejs=12.4.0
-  - dvc[all]
+  - dvc
   - numpy
   - pandas
   - matplotlib
