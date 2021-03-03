@@ -2,9 +2,9 @@
 The template for continuous and integrated research
 
 ## Requirements
-- [git][git]. For versioning your code.
-- [dvc][dvc]. For versioning your data.
 - [conda][conda]. For setting up your research environment and python dependencies.
+- [git][git]. For versioning your code.
+- [dvc][dvc]. For versioning your data (part of conda environment).
 
 ## Setup
 TODO
