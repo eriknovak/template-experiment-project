@@ -1,4 +1,4 @@
-name: deneir
+name: deneir-script
 channels:
   - anaconda
   - conda-forge
