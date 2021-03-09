@@ -21,6 +21,7 @@ dependencies:
   - tqdm
   - pytorch
   - tensorboard
+  - nbconvert
     # change the cudatoolkit to match 
     # the CUDA version on your machine 
   - cudatoolkit=11
