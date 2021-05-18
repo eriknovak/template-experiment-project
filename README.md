@@ -28,6 +28,11 @@ To activate the newly set environment run:
 conda activate deneir-script
 ```
 
+### Install PyTorch
+
+Based on your CUDA drivers install the appropriate pytorch version. Please
+reference the instructions [here][pytorch]
+
 ### Deactivate the environment
 When the environment is not in use anymore deactivate it by running:
 
@@ -39,3 +44,4 @@ conda deactivate
 [git]: https://git-scm.com/
 [dvc]: https://dvc.org/
 [conda]: https://docs.conda.io/en/latest/
+[pytorch]: https://pytorch.org/
