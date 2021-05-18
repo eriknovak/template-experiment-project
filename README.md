@@ -31,7 +31,12 @@ conda activate deneir-script
 ### Install PyTorch
 
 Based on your CUDA drivers install the appropriate pytorch version. Please
-reference the instructions [here][pytorch]
+reference the instructions [here][pytorch].
+
+```bash
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
+```
+
 
 ### Deactivate the environment
 When the environment is not in use anymore deactivate it by running:
