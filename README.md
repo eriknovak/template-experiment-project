@@ -51,7 +51,7 @@ If one will use Jupyter Notebook or Lab the jupyter extension configurator
 needs to be installed as well.
 
 ```bash
-conda install -n news-events -c conda-forge jupyter_nbextensions_configurator
+conda install -n deneir-script conda-forge jupyter_nbextensions_configurator
 ```
 
 
