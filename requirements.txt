@@ -1,0 +1,14 @@
+jupyterlab
+ipywidgets>=7.5
+numpy
+pandas
+scikit-learn
+transformers
+datasets
+matplotlib
+seaborn
+plotly
+tqdm
+python-dotenv
+black
+dvc[ssh]

@@ -1,15 +1,26 @@
-name: compare-the-model
-on: [push]
+name: Compare models
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
   run:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      
-      - uses: iterative/setup-cml@v1
-        with: 
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Python v3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Setup CML
+        uses: iterative/setup-cml@v1
+        with:
           version: latest
-        
-      - name: cml_run
-        run: |
-          conda env create -f environment.yml
+
+      - name: Setup environment
+        run: make setup

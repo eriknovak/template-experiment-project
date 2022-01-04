@@ -1,0 +1,36 @@
+stages:
+  preprocess:
+    cmd: python src/data/preprocess.py
+    deps:
+      - data
+    params:
+      - param1
+      - param2
+    outs:
+      - clean.txt
+
+  train:
+    cmd: python src/models/model_train.py models/model.pth data
+    deps:
+      - data
+      - src/models/model_train.py
+      - src/models/model.py
+    params:
+      - param1
+      - param2
+    outs:
+      - models/model.pth
+      - data/train_losses
+
+  evaluate:
+    cmd: python src/models/model_evaluate.py models/model.pth data
+    deps:
+      - data
+      - src/models/model_evaluate.py
+      - src/models/model.py
+      - models/model.pth
+    params:
+      - param1
+      - param2
+    outs:
+      - results/scores.json
