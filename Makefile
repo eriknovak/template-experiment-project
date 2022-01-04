@@ -1,5 +1,7 @@
-# specify the repository name
+# specify the repository environment name
+# TODO: change the environment name
 REPO_NAME := deneir-script
+CUDA_VERSION := 11.1
 
 .ONESHELL:
 SHELL=/bin/bash
@@ -11,8 +13,15 @@ setup: requirements.txt setup.py
 	$(CONDA_ACTIVATE) $(REPO_NAME)
 	pip install -e .
 
-# cleans the project
+# install pytorch in the experiment environment
+pytorch: setup
+	conda install -n $(REPO_NAME) pytorch torchvision torchaudio cudatoolkit=$(CUDA_VERSION) -c pytorch -c nvidia --yes
+
+# install jupyter extensions configurator
+jupyter: setup
+	conda install -n $(REPO_NAME) jupyter_nbextensions_configurator -c conda-forge --yes
+
+# clean the project
 clean:
-	rm -rf .eggs
-	rm -rf deneir_script.egg-info
+	rm -rf .eggs deneir_script.egg-info
 	conda env remove -n $(REPO_NAME)
