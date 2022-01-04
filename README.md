@@ -68,20 +68,20 @@ make jupyter
 
 TODO
 
-# Publications
+## 📚 Publications
 
 In case you use any of the components for your research,
 please refer to (and cite) the papers:
 
 - TODO: Paper
 
-## Related work
+### 📓 Related work
 
 - TODO: Paper
 - TODO: Paper
 - TODO: Paper
 
-# Acknowledgments
+## 📣 Acknowledgments
 
 TODO
 
