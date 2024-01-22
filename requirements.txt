@@ -1,5 +1,5 @@
 # notebook
-juyterlab
+jupyterlab
 ipywidgets>=7.5
 notebook
 # analysis
