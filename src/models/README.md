@@ -1,3 +1,3 @@
 # Models
 
-The source code of the models' architecture.
+The source code of the model's architecture.
