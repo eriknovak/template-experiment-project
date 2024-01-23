@@ -1,10 +1,10 @@
 # Models
 
-The folder dedicated to storing files with model parameters.
+The folder is dedicated to storing files with model parameters.
 
 ## Naming Convention
 
-Each filename must following the given naming convention:
+Each filename must follow the given naming convention:
 
 ```bash
 # task   - the task the model was trained to solve
@@ -15,6 +15,7 @@ Each filename must following the given naming convention:
 #          Possible options:
 #            - pth: Pytorch extension.
 #            - ckpt: Pytorch lightning extension.
+#            - other: Any other extension.
 
 {task}_{lmodel}_{tdata}.{ext}
 ```
