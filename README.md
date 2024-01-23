@@ -13,7 +13,8 @@ Inspired by the [cookiecutter] folder structure.
 
 Before starting the project make sure these requirements are available:
 
-- [git][git]. For versioning your code.
+- [python]. For setting up the environment and Python dependencies (version 3.8 or higher).
+- [git]. For versioning your code.
 
 ## 🛠️ Setup
 
@@ -40,6 +41,8 @@ deactivate
 ```
 
 ### Install
+
+Check the `requirements.txt` file. If you have any additional requirements, add them here.
 
 To install the requirements run:
 
