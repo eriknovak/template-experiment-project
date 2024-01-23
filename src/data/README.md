@@ -1,3 +1,3 @@
-# Data Processing Scripts
+# Data Scripts
 
-This folder contains python scripts for data processing.
+This folder contains Python scripts for data processing.
